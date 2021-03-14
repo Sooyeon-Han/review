@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>웹 페이지의 구성 요소</title>
+<style>
+   body { background-color : black; color : white;
+            margin-left : 40px; margin-right : 40px;}
+   h2 { text-align : center; color : grey;}
+   hr { height : 5px; border : solid darkred; 
+            background-color : darkred }
+   span.fire { color: red; font-size: 20px; }
+   span.water { color: blue; font-size: 20px; }
+</style>
+<script>
+   function show() { // <img>에 이미지 달기
+      document.getElementById("fig").src = "water.jpg"
+   }
+   function hide() { // <img>에 이미지 제거
+      document.getElementById("fig").src= "";
+   }
+</script>
+</head>
+<body>
+<h2 onmouseover="show()" onmouseout="hide()">
+      Fire and Ice</h2>
+<br>
+<h4 style="text-align:right;">Robert Frost</h4>      
+<hr>
+<div><img id="fig" src=""></div>
+Some say the world will end in <span class="fire">fire</span>,<br>
+Some say in <span class="water">ice</span>.<br>
+From what I’ve tasted of desire<br>
+I hold with those who favor <span class="fire">fire</span>.<br>
+But if it had to perish twice,<br>
+I think I know enough of hate<br>
+To say that for destruction <span class="water">ice</span><br>
+Is also great<br>
+And would suffice.
+</body>
+</html>
